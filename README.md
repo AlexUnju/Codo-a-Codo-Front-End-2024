@@ -9,7 +9,6 @@ Este proyecto tiene como objetivo crear una colección de juegos clásicos y div
 - **Piedra, Papel o Tijera**: ¡Un clásico juego de decisiones!
 - **TaTeTi (Tres en línea)**: ¡Desafía a un amigo a una partida!
 - **Juego de Memoria**: Pon a prueba tu memoria con este divertido juego.
-- **Memorama**: Encuentra las parejas de cartas lo más rápido posible.
 
 ## Participa en Git Projects
 
