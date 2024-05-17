@@ -1,14 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/juegoMemoria.css" />
     <title>Juego de Memoria</title>
-</head>
-<body>
-    <!-- Instrucciones para commits -->
-    <!-- Recuerda hacer commits descriptivos y atómicos -->
-    <!-- Escribe un mensaje claro que explique los cambios realizados -->
-    <!-- Utiliza verbos en tiempo presente y en minúsculas -->
-</body>
+  </head>
+
+  <body>
+    <main>
+      <section class="section1">
+        <h1>🤖 - Memorama - 🤖</h1>
+        <table>
+          <tr>
+            <td>
+              <button id="0" onclick="destapar(0)"></button>
+            </td>
+            <td><button id="1" onclick="destapar(1)"></button></td>
+            <td><button id="2" onclick="destapar(2)"></button></td>
+            <td><button id="3" onclick="destapar(3)"></button></td>
+          </tr>
+          <tr>
+            <td><button id="4" onclick="destapar(4)"></button></td>
+            <td><button id="5" onclick="destapar(5)"></button></td>
+            <td><button id="6" onclick="destapar(6)"></button></td>
+            <td><button id="7" onclick="destapar(7)"></button></td>
+          </tr>
+          <tr>
+            <td><button id="8" onclick="destapar(8)"></button></td>
+            <td><button id="9" onclick="destapar(9)"></button></td>
+            <td><button id="10" onclick="destapar(10)"></button></td>
+            <td><button id="11" onclick="destapar(11)"></button></td>
+          </tr>
+          <tr>
+            <td><button id="12" onclick="destapar(12)"></button></td>
+            <td><button id="13" onclick="destapar(13)"></button></td>
+            <td><button id="14" onclick="destapar(14)"></button></td>
+            <td><button id="15" onclick="destapar(15)"></button></td>
+          </tr>
+        </table>
+      </section>
+      <section class="section2">
+        <h2 id="aciertos" class="estadisticas">Aciertos: 0</h2>
+        <h2 id="t-restante" class="estadisticas">Tiempo: 60 segundos</h2>
+        <h2 id="movimientos" class="estadisticas">Movimientos: 0</h2>
+      </section>
+    </main>
+    <footer>
+      <section class="section3">
+        <h2>🤖 - Juegos de Memoria o Memorama - Online y Gratis - 🤖</h2>
+        <p class="">
+          El juego de Memoria también llamado el Memorama o Memory en algunos
+          países. El juego fue editado por Ravensburger, una entidad alemana, es
+          un famoso juego de mesa que ejercita la memoria visual. La primera
+          edición del memory data de 1959 y, desde entonces, el juego ha sido
+          adaptado en numerosas versiones. Éste juego de memoria se ha vuelto un
+          clásico, y su notoriedad ha cruzado fronteras de una gran variedad de
+          países. Puedes encontrar más juegos Memorama en la página matching
+          games de nuestro sitio web en inglés www.memozor.com. Encontrarás una
+          amplia gama de juegos Memorama en línea gratuitos para jóvenes y
+          mayores: juegos para niños, para adultos o para la tercera edad.
+        </p>
+      </section>
+
+      <a href="../index2.html" class="btn-init">Volver a inicio</a>
+      <p>Gracias por visitar el sitio web, ¡espero verte de nuevo pronto!</p>
+      <div>&copy; Copyright . All Rights Reserved</div>
+    </footer>
+    <script src="../static/js/juegoMemoria.js"></script>
+  </body>
 </html>
