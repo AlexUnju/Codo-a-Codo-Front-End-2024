@@ -15,16 +15,18 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-.conteiner {
+.container {
   max-width: 1200px;
   margin: 0 auto;
   background: rgb(8, 210, 235);
   background: linear-gradient(
     307deg,
     rgba(8, 210, 235, 1) 0%,
-    rgb(18, 181, 230) 50%,
+    rgb(65, 109, 255) 50%,
     rgba(226, 2, 215, 1) 100%
   );
+  background-size: 200% 200%;
+  animation: gradientAnimation 30s ease infinite;
 }
 
 .header {
@@ -39,7 +41,7 @@ body {
 
 .logo {
   margin-top: 15px;
-  width: 50px;
+  width: 70px;
 }
 
 .menu {
@@ -87,26 +89,30 @@ body {
   width: 40%;
 }
 
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .header-txt h1 {
   font-size: 70px;
   line-height: 80px;
   font-weight: 700;
   text-transform: uppercase;
-  background-image: linear-gradient(
-    307deg,
-    rgb(216, 8, 235) 0%,
-    rgb(87, 8, 235) 50%,
-    rgb(2, 200, 226) 100%
-  );
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
-  font-family: "Roboto Condensed", sans-serif;
+  color:#fff;
+  font-family: "Roboto Condensed", sans-serif;  
 }
 
 .header-txt p {
   font-size: 18px;
-  color: aliceblue;
+  color: rgba(255, 255, 255, 0.819);
   font-weight: 500;
   margin-bottom: 25px;
 }
@@ -138,8 +144,8 @@ body {
 }
 
 .images {
-  width: 650px;
-  height: 350px;
+  width: 730px;
+  height: 465px;
   position: absolute;
   right: 0;
 }
@@ -175,31 +181,31 @@ body {
 }
 
 .rows {
-  width: 160px;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  right: 480px;
-  bottom: 250px;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  padding: 25px;
+  border-radius: 50%;
+  font-size: 15px;
 }
 
 .swiper-button-next {
-  padding: 25px 25px;
-  border-radius: 50%;
   border: 2px solid #fff;
-  font-size: 15px;
 }
 
 .swiper-button-prev {
-  padding: 25px 25px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  font-size: 15px;
+  border: 2px solid #ffffff;
 }
 
-.swiper-button-prev::after {
-  font-size: 25px;
-  color: #fff;
-}
-
+.swiper-button-prev::after,
 .swiper-button-next::after {
   font-size: 25px;
   color: #fff;
