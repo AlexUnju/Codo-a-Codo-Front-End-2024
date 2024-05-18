@@ -26,11 +26,11 @@ function iniciarTurno(e) {
     // tijera => 2
 
     if (eleccionPC === 0) {
-        eleccionPC = "piedra🪨";
+        eleccionPC = "piedra";
     } else if (eleccionPC === 1) {
-        eleccionPC = "papel📋"
+        eleccionPC = "papel"
     } else if (eleccionPC === 2) {
-        eleccionPC = "tijera✂️"
+        eleccionPC = "tijera"
     }
 
     // piedra vence a tijera
@@ -39,15 +39,15 @@ function iniciarTurno(e) {
     // si son iguales es empate
 
     if (
-        (eleccionUsuario === "piedra🪨" && eleccionPC === "tijera✂️") ||
-        (eleccionUsuario === "tijera✂️" && eleccionPC === "papel📋") ||
-        (eleccionUsuario === "papel📋" && eleccionPC === "piedra🪨")
+        (eleccionUsuario === "piedra" && eleccionPC === "tijera") ||
+        (eleccionUsuario === "tijera" && eleccionPC === "papel") ||
+        (eleccionUsuario === "papel" && eleccionPC === "piedra")
     ) {
         ganaUsuario();
     } else if (
-        (eleccionPC === "piedra🪨" && eleccionUsuario === "tijera✂️") ||
-        (eleccionPC === "tijera✂️" && eleccionUsuario === "papel📋") ||
-        (eleccionPC === "papel📋" && eleccionUsuario === "piedra🪨")
+        (eleccionPC === "piedra" && eleccionUsuario === "tijera") ||
+        (eleccionPC === "tijera" && eleccionUsuario === "papel") ||
+        (eleccionPC === "papel" && eleccionUsuario === "piedra")
     ) {
         ganaPC();
     } else {

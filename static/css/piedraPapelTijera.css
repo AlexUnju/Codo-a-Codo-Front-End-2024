@@ -15,7 +15,8 @@
 }
 
 body {
-    background-color: var(--clr-purple);
+    background: rgb(8,210,235);
+background: linear-gradient(307deg, rgba(8,210,235,1) 0%, rgb(21, 18, 230) 50%, rgba(226,2,215,1) 100%);
     color: var(--clr-beige);
 }
 
@@ -25,7 +26,8 @@ header {
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    background-color: var(--clr-beige);
+    background: rgb(8,210,235);
+background: radial-gradient(circle, rgba(8,210,235,1) 0%, rgba(220,230,18,1) 50%, rgba(226,2,215,1) 100%);
     color: var(--clr-purple);
     border-bottom-left-radius: 3rem;
     border-bottom-right-radius: 3rem;
@@ -45,7 +47,7 @@ main {
 }
 
 .marcador {
-    background-color: var(--clr-gold);
+    background-color:rgba(226,2,215,1);
     padding: 1rem 2rem;
     border-radius: 1rem;
     position: relative;
@@ -58,12 +60,12 @@ main {
 
 .marcador .nombre {
     position: absolute;
-    color: var(--clr-beige);
-    background-color: var(--clr-purple);
+    color: black;
+    background-color: rgb(231, 129, 226);
     line-height: 1;
     padding: .5rem;
     border-radius: .5rem;
-    border: 2px solid var(--clr-gold);
+    border: 2px solid rgba(226,2,215,1);
 
 }
 
@@ -97,7 +99,7 @@ main {
 
 .arma {
     font-size: 2rem;
-    background-color: var(--clr-beige);
+    background-color: rgb(240, 122, 234);
     border: 0;
     padding: .5rem;
     border-radius: .5rem;
@@ -131,4 +133,8 @@ main {
 
 .disabled {
     display: none;
+}
+
+img {
+    width: 100px;
 }
