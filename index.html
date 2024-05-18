@@ -1,122 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Juegos Interactivos</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games</title>
+    <link rel="stylesheet" href="static/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <body class="container">
+    <header class="header">
+      <div class="menu">
+        <img class="logo" src="static/img/controlador.png" alt="" />
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img class="icono-menu" src="static/img/menu-de-hamburguesas.png" />
+        </label>
 
-  <!-- CSS -->
-  <link href="static/css/styles.css" rel="stylesheet">
-</head>
-<body>
-    <!-- Instrucciones para commits -->
-    <!-- Recuerda hacer commits descriptivos y atómicos -->
-    <!-- Escribe un mensaje claro que explique los cambios realizados -->
-    <!-- Utiliza verbos en tiempo presente y en minúsculas -->
+        <nav class="navbar">
+          <ul>
+            <li>
+              <a href="templates/juegoMemoria.html"
+                ><i></i> <span>Memorama</span></a
+              >
+            </li>
+            <li>
+              <a href="templates/piedraPapelTijera.html"
+                ><i></i> <span>Piedra-Papel-Tijera</span></a
+              >
+            </li>
+            <li>
+              <a href="templates/tateti.html"><i></i> <span>Ta-Te-Ti</span></a>
+            </li>
 
-  <header id="header">
-    <nav id="navbar">
-      <ul>
-        <li><a href="#home"><i></i> <span>Home</span></a></li>
-        <li><a href="#about"><i></i> <span>About</span></a></li>
-        <li><a href="templates/tateti.html"><i></i> <span>Juegos</span></a></li>
-        <li><a href="#contact"><i></i> <span>Contacto</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <h2>hero</h2>
-  </section><!-- End Hero --> 
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about">
-      <div class="container">
-        <div>
-          <h2>about</h2>
+            <li>
+              <a href="#contact"><i></i> <span>Contacto</span></a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </section><!-- End About Section -->
 
-    <!-- ======= games Section ======= -->
-    <section id="portfolio">
-          <h2>Games</h2>      
-    </section><!-- End games Section -->
-
-   
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact">
-      <div class="container">
-        <div>
-          <h2>Contacto</h2>
-        </div>
-
-        <div>
+      <div class="header-container">
+        <div class="header-txt">
+          <h1>Elige tu juego favorito y divertite</h1>
           <div>
-            <div>
-              <div class="email">
-                <i></i>
-                <h4>Email:</h4>
-                <p>@gmail.com</p>
-              </div>
-              <div>
-                <i></i>
-                <h4>telefono:</h4>
-                <p>+549</p>
-              </div>
+            <p>
+              ¿Tienes 5 minutos para jugar algunos minijuegos gratis? ¡Logra tu
+              puntaje más alto y luego vuelve a lo que sea que estabas haciendo
+              antes!
+            </p>
+          </div>
+          <a href="#" class="btn-1">Contacto</a>
+        </div>
+      </div>
+
+      <div class="images">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="templates/juegoMemoria.html"
+                ><img src="static/img/memorama.jpg" alt="" id="enlace" />
+                <h3>Memorama</h3></a
+              >
             </div>
-
-          </div>
-
-          <div>
-
-            <form>
-              <div>
-                <div>
-                  <input type="text" id="name" placeholder="Tú Nombre" required>
-                </div>
-                <div>
-                  <input type="email" placeholder="Tú Email" required>
-                </div>
-              </div>
-              <div>
-                <input type="text" placeholder="Asunto" required>
-              </div>
-              <div>
-                <textarea placeholder="Mensaje" required></textarea>
-              </div>
-              <div ><button>Enviar Mensaje</button></div>
-            </form>
+            <div class="swiper-slide">
+              <a href=""
+                ><img src="static/img/ppt.avif" alt="" id="enlace" />
+                <h3>Piedra-Papel-Tijera</h3></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <a href="templates/tateti.html"
+                ><img src="static/img/tateti.jpg" alt="" id="enlace" />
+                <h3>TaTeTi</h3></a
+              >
+            </div>
           </div>
         </div>
+        <div class="rows">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
-    </section><!-- End Contact Section -->
+     
+        </div>
+     
+    </header>
 
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>footer</h3>
-      <p>Gracias por visitar el sitio web, ¡espero verte de nuevo pronto!</p>
-      <div class="social-links">
-        <a href="#"><i></i></a>
-        <a href="#"><i></i></a>
-        <a href="#"><i></i></a>
-        <a href="#"><i></i></a>
-      </div>
-      <div class="copyright">
-        &copy; Copyright . All Rights Reserved
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-</body>
-
+    <footer>
+      <div>&copy; Copyright . All Rights Reserved</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="static/js/index.js"></script>
+  </body>
 </html>
