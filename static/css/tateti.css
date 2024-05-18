@@ -50,20 +50,20 @@ html {
 }
 
 .turno {
-  color: azure;
+  color: rgb(255, 255, 255);
   text-shadow: -5px -5px 0 #000, 5px -5px 0 #000, -5px 5px 0 #000,
     5px 5px 0 #000;
   font-size: 4.5em;
   font-weight: bold;
   text-align: center;
-  padding-top: 100px;
-  position: fixed;
+  padding-top: 30px;
+  position: absolute;
   width: 100%;
 }
 
 .tablero {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   display: grid;
   grid-template-columns: repeat(3, var(--tamano-celda));
   grid-template-rows: repeat(3, var(--tamano-celda));
@@ -189,6 +189,6 @@ footer div {
 @media screen and (max-width: 768px) {
   .turno {
     font-size: 50px;
-    margin-top: -75px;
+    margin-top: -50px;
   }
 }
