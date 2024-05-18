@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Piedra, Papel o Tijera123</title>
-</head>
-<body>
+    <link rel="stylesheet" href="/static/css/piedraPapelTijera.css" />
+  </head>
+  <body>
     <!-- Instrucciones para commits -->
     <!-- Recuerda hacer commits descriptivos y atómicos -->
     <!-- Escribe un mensaje claro que explique los cambios realizados -->
-    <!-- Utiliza verbos en tiempo presente y en minúsculas 123-->    
-</body>
+    <!-- Utiliza verbos en tiempo presente y en minúsculas 123-->
+    <h1>Piedra | Papel | Tijeras</h1>
+    <div id="campo-batalla" class="campo-batalla">
+      <div id="img-ataque-jugador" class="caja-batala">
+        <!--<img class="img-batalla" src="assets/Papel.PNG" alt="">-->
+      </div>
+      <div class="caja-batala"><p class="text-mensajes">VS</p></div>
+      <div id="img-ataque-pc" class="caja-batala">
+        <!--<img class="img-batalla" src="assets/Piedra.PNG" alt="">-->
+      </div>
+    </div>
+    <div>
+      <p id="msj-batalla" class="text-mensajes"></p>
+    </div>
+    <h2>Elije un ataque</h2>
+    <div>
+      <img
+        id="btn-piedra"
+        class="btn-ataques"
+        src="/static/img/Piedra.PNG"
+        alt=""
+      />
+      <img
+        id="btn-papel"
+        class="btn-ataques"
+        src="/static/img/Papel.PNG"
+        alt=""
+      />
+      <img
+        id="btn-tijeras"
+        class="btn-ataques"
+        src="/static/img/Tijeras.PNG"
+        alt=""
+      />
+    </div>
+    <script src="/static/js/piedraPapelTIjera.js"></script>
+    <a href="../index.html" class="btn-init">Volver a inicio</a>
+  </body>
 </html>
