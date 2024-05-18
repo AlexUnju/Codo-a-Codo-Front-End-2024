@@ -105,8 +105,8 @@ body {
   line-height: 80px;
   font-weight: 700;
   text-transform: uppercase;
-  color:#fff;
-  font-family: "Roboto Condensed", sans-serif;  
+  color: aliceblue;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .header-txt p {
@@ -209,8 +209,6 @@ body {
   font-size: 25px;
   color: #fff;
 }
-
-
 
 footer {
   text-align: center;
