@@ -130,7 +130,7 @@ body {
     rgb(2, 200, 226) 100%
   );
   border: 3px solid rgba(207, 231, 235, 0.7);
-  box-shadow: 0 0 20px rgba(21, 29, 31, 0.4);
+  box-shadow: 0 0 20px rgba(21, 22, 31, 0.4);
   font-family: "Roboto Condensed", sans-serif;
 }
 
