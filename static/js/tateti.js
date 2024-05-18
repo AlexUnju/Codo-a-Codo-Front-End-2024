@@ -99,9 +99,3 @@ function buscarGanador(posicionesActuales){
     }
     return false;
 }
-
-
-
-
-
-
