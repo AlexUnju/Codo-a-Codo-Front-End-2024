@@ -66,7 +66,6 @@ body {
   display: block;
   font-weight: bold;
 }
-
 .menu .navbar ul li a:hover {
   color: rgb(240, 43, 230);
 }
@@ -106,8 +105,8 @@ body {
   line-height: 80px;
   font-weight: 700;
   text-transform: uppercase;
-  color:#fff;
-  font-family: "Roboto Condensed", sans-serif;  
+  color: aliceblue;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .header-txt p {
@@ -307,8 +306,14 @@ footer div {
   .logo {
     width: 45px;
   }
+
+  .menu .navbar ul li a {
+    font-size: 16px;
+    padding: 13px;
+  }
+
   .header-txt h1 {
-    font-size: 60px;
+    font-size: 40px;
     line-height: 80px;
     font-weight: 700;
   }
@@ -322,12 +327,17 @@ footer div {
 
   .images {
     position: initial;
-    width: 400px;
+    width: 350px;
     height: 250px;
     margin: 10px;
   }
 
   .swiper-slide h3 {
     font-size: 25px;
+  }
+
+  .btn-1 {
+    font-size: 13px;
+    padding: 12px 29px;
   }
 }
